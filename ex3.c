@@ -118,7 +118,7 @@ void AvgDeltaMetrics(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES], int da
         }
         else
         {
-            printf("Brand: %s, Average Delta: %f\n", brands[brand], 0);
+            printf("Brand: %s, Average Delta: 0.000000\n", brands[brand]);
         }
     }
 }
