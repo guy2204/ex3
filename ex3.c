@@ -107,12 +107,19 @@ void AvgDeltaMetrics(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES], int da
         if (dayCounter > 1)
         {
             avg = (double)delta / (dayCounter - 1);
+            printf("Brand: %s, Average Delta: %f\n", brands[brand], avg);
+
+        }
+        else if(dayCounter == 1)
+        {
+            avg = (double)delta / dayCounter;
+            printf("Brand: %s, Average Delta: %f\n", brands[brand], avg);
+
         }
         else
         {
-            avg = (double)delta / dayCounter;
+            printf("Brand: %s, Average Delta: %f\n", brands[brand], 0);
         }
-        printf("Brand: %s, Average Delta: %f\n", brands[brand], avg);
     }
 }
 void OverAllBestSaleDay(int cube[DAYS_IN_YEAR][NUM_OF_BRANDS][NUM_OF_TYPES], int daysValide[DAYS_IN_YEAR])
