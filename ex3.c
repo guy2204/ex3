@@ -1,5 +1,4 @@
 /******************
-Name: Guy Melamed
 Assignment: ex3
 *******************/
 
